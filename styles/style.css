@@ -48,14 +48,12 @@ button {
     color: black;
 }
 
-#newbuttons {
-    margin: 1px;
-    border-radius: 5%;
-    border: none;
-    font-weight: bold;
-    font-size: 2em;
-    font-family: monospace;
-    background-color: #FF8F1F;
+.newbuttons{
+    background-color: #3ecf31;
+}
+
+.newbuttons:active {
+    background-color: #7cd374;
 
 }
 
