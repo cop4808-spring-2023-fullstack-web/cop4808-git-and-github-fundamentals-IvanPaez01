@@ -163,6 +163,22 @@ function inputBackspace() {
     }
 }
 
+function squareRoot(x) {
+    return Math.sqrt(x);
+}
+
+function cubeRoot(x) {
+    return Math.cbrt(x);
+}
+
+function fourthRoot(x) {
+    return Math.pow(x, 1/4);
+}
+
+function fifthRoot(x) {
+    return Math.pow(x, 1/5);
+}
+
 function operate(x, y, op) {
     if(op === '+') {
         return x + y;
@@ -176,7 +192,17 @@ function operate(x, y, op) {
         } else {
         return x / y;
         }
+    } else if (op == '√') {
+        return squareRoot(x);
+    } else if (op == '3√') {
+        return cubeRoot(x);
+    } else if (op == '4√') {
+        return fourthRoot(x);
+    } else if (op == '5√') {
+        return fifthRoot(x);
     }
+
+
 }
 
 function roundAccurately(num, places) {
